@@ -312,5 +312,6 @@
   "511": {
     "description": "Network Authentication Required – Client must authenticate to gain network access", 
     "RFC": "RFC 6585", 
-    "message": "Network authentication required. 🔑"}
+    "message": "Network authentication required. 🔑"
+  }
 }
