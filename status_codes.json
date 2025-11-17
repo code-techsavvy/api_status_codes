@@ -1,0 +1,316 @@
+{
+  "100": {
+    "description": "Continue – The server has received the request headers and the client should proceed to send the request body", 
+    "RFC": "RFC 9110", 
+    "message": "Continue sending your request. ⏩"
+  },
+  "101": {
+    "description": "Switching Protocols – The requester asked the server to switch protocols and the server agreed", 
+    "RFC": "RFC 9110", 
+    "message": "Protocol switching in progress. 🔄"
+  },
+  "102": {
+    "description": "Processing – The server is processing the request but no response is available yet", 
+    "RFC": "RFC 2518", 
+    "message": "Request is being processed… ⏳"
+  },
+  "103": {
+    "description": "Early Hints – Used to return some response headers before the final response", 
+    "RFC": "RFC 8297", 
+    "message": "Early hints received. Prepare for response."
+  },
+  "200": {
+    "description": "OK – The request succeeded and the server returned the requested data", 
+    "RFC": "RFC 9110", 
+    "message": "Request succeeded! ✅"
+  },
+  "201": {
+    "description": "Created – A new resource has been successfully created as a result of the request", 
+    "RFC": "RFC 9110", 
+    "message": "Resource created successfully! 🎉"
+  },
+  "202": {
+    "description": "Accepted – The request has been received but not yet acted upon", 
+    "RFC": "RFC 9110", 
+    "message": "Request accepted, processing… ⏳"
+  },
+  "203": {
+    "description": "Non-Authoritative Information – Returned metadata is not from the origin server", 
+    "RFC": "RFC 9110", 
+    "message": "Request succeeded, metadata may vary. ℹ️"
+  },
+  "204": {
+    "description": "No Content – The server successfully processed the request but is not returning content", 
+    "RFC": "RFC 9110", 
+    "message": "No content to display, but request succeeded. ✅"
+  },
+  "205": {
+    "description": "Reset Content – Tells the client to reset the document view", 
+    "RFC": "RFC 9110", 
+    "message": "Reset the view as requested. 🔄"
+  },
+  "206": {
+    "description": "Partial Content – The server is returning partial data due to a Range request", 
+    "RFC": "RFC 9110", 
+    "message": "Partial data returned. 📄"
+  },
+  "207": {
+    "description": "Multi-Status – Multiple status codes may apply", 
+    "RFC": "RFC 4918", 
+    "message": "Multiple results returned. ⚡"
+  },
+  "208": {
+    "description": "Already Reported – Members of a DAV binding already enumerated", 
+    "RFC": "RFC 5842", 
+    "message": "Already reported previously. 🔁"
+  },
+  "226": {
+    "description": "IM Used – GET request fulfilled using instance manipulations", 
+    "RFC": "RFC 3229", 
+    "message": "GET request fulfilled with instance manipulations. ✅"
+  },
+  "300": {
+    "description": "Multiple Choices – Multiple possible responses exist", 
+    "RFC": "RFC 9110", 
+    "message": "Multiple options available. 🔀"
+  },
+  "301": {
+    "description": "Moved Permanently – The resource has been permanently moved to a new URI", 
+    "RFC": "RFC 9110", 
+    "message": "Resource moved permanently. Redirecting… ↪️"
+  },
+  "302": {
+    "description": "Found – The resource is temporarily at a different URI", 
+    "RFC": "RFC 9110", 
+    "message": "Temporary redirect in place. 🔄"
+  },
+  "303": {
+    "description": "See Other – Response can be found under another URI using GET", 
+    "RFC": "RFC 9110", 
+    "message": "Check other URI for the response. 👀"
+  },
+  "304": {
+    "description": "Not Modified – Resource not modified since the last request; used for caching", 
+    "RFC": "RFC 9110", 
+    "message": "Resource not modified. Use cache. 🗂️"
+  },
+  "305": {
+    "description": "Use Proxy – Must use proxy to access resource", 
+    "RFC": "RFC 9110", 
+    "message": "Please access via proxy. 🔗"
+  },
+  "306": {
+    "description": "Unused – No longer used; reserved", 
+    "RFC": "RFC 9110", 
+    "message": "Code reserved; not in use. ⚠️"
+  },
+  "307": {
+    "description": "Temporary Redirect – Temporary redirect without changing method", 
+    "RFC": "RFC 9110", 
+    "message": "Temporary redirect. Follow the new URI. 🔄"
+  },
+  "308": {
+    "description": "Permanent Redirect – Permanent redirect without changing method", 
+    "RFC": "RFC 7538", 
+    "message": "Permanent redirect in place. ↪️"
+  },
+  "400": {
+    "description": "Bad Request – The server could not understand the request due to invalid syntax", 
+    "RFC": "RFC 9110", 
+    "message": "Invalid request! Check your data. ⚠️"
+  },
+  "401": {
+    "description": "Unauthorized – Authentication is required or has failed", 
+    "RFC": "RFC 9110", 
+    "message": "Authentication required. 🔒"
+  },
+  "402": {
+    "description": "Payment Required – Reserved for future use", 
+    "RFC": "RFC 9110", 
+    "message": "Payment required (reserved). 💰"
+  },
+  "403": {
+    "description": "Forbidden – Server understood the request but refuses to authorize it", 
+    "RFC": "RFC 9110", 
+    "message": "Access forbidden. 🚫"
+  },
+  "404": {
+    "description": "Not Found – The server cannot find the resource", 
+    "RFC": "RFC 9110", 
+    "message": "Resource not found. ❌"
+  },
+  "405": {
+    "description": "Method Not Allowed – Request method is known but not supported", 
+    "RFC": "RFC 9110", 
+    "message": "Method not allowed. ⚠️"
+  },
+  "406": {
+    "description": "Not Acceptable – Resource cannot return acceptable content according to Accept headers", 
+    "RFC": "RFC 9110", 
+    "message": "Content not acceptable. ⚠️"
+  },
+  "407": {
+    "description": "Proxy Authentication Required – Client must authenticate with the proxy", 
+    "RFC": "RFC 9110", 
+    "message": "Authenticate with proxy first. 🔑"
+  },
+  "408": {
+    "description": "Request Timeout – The server timed out waiting for the request", 
+    "RFC": "RFC 9110", 
+    "message": "Request timed out. ⏱️"
+  },
+  "409": {
+    "description": "Conflict – Request conflicts with current state of the server", 
+    "RFC": "RFC 9110", 
+    "message": "Conflict detected. Resolve first. ⚔️"
+  },
+  "410": {
+    "description": "Gone – Resource is permanently gone and will not return", 
+    "RFC": "RFC 9110", 
+    "message": "Resource gone permanently. ❌"
+  },
+  "411": {
+    "description": "Length Required – Request requires Content-Length header", 
+    "RFC": "RFC 9110", 
+    "message": "Content-Length header required. 📏"
+  },
+  "412": {
+    "description": "Precondition Failed – Precondition headers evaluated as false", 
+    "RFC": "RFC 9110", 
+    "message": "Precondition failed. ⚠️"
+  },
+  "413": {
+    "description": "Payload Too Large – Payload exceeds server limits", 
+    "RFC": "RFC 9110", 
+    "message": "Payload too large. 🚨"
+  },
+  "414": {
+    "description": "URI Too Long – The URI is longer than the server is willing to interpret", 
+    "RFC": "RFC 9110", 
+    "message": "URI too long. 📜"
+  },
+  "415": {
+    "description": "Unsupported Media Type – Server does not support the format of the request payload", 
+    "RFC": "RFC 9110", 
+    "message": "Unsupported media type. ❌"
+  },
+  "416": {
+    "description": "Range Not Satisfiable – The requested range cannot be fulfilled", 
+    "RFC": "RFC 9110", 
+    "message": "Requested range not satisfiable. ⚠️"
+  },
+  "417": {
+    "description": "Expectation Failed – Expect header requirements not met", 
+    "RFC": "RFC 9110", 
+    "message": "Expectation failed. ⚠️"
+  },
+  "418": {
+    "description": "I'm a Teapot – Joke code from HTCPCP", 
+    "RFC": "RFC 2324", 
+    "message": "I'm a teapot! ☕"
+  },
+  "421": {
+    "description": "Misdirected Request – Request sent to a server that cannot produce a response", 
+    "RFC": "RFC 7540", 
+    "message": "Misdirected request. ❌"
+  },
+  "422": {
+    "description": "Unprocessable Content – Syntax is correct but content is semantically wrong", 
+    "RFC": "RFC 9110, RFC 4918", 
+    "message": "Content unprocessable. ⚠️"
+  },
+  "423": {
+    "description": "Locked – The resource is locked", 
+    "RFC": "RFC 4918", 
+    "message": "Resource locked. 🔒"
+  },
+  "424": {
+    "description": "Failed Dependency – The request failed due to a dependency failure", 
+    "RFC": "RFC 4918", 
+    "message": "Failed dependency. ⚠️"
+  },
+  "425": {
+    "description": "Too Early – Server is unwilling to process the request due to replay risk", 
+    "RFC": "RFC 8470", 
+    "message": "Too early to process request. ⏳"
+  },
+  "426": {
+    "description": "Upgrade Required – Client must switch to a different protocol", 
+    "RFC": "RFC 9110", 
+    "message": "Upgrade required. 🔄"
+  },
+  "428": {
+    "description": "Precondition Required – Server requires conditional requests", 
+    "RFC": "RFC 6585", 
+    "message": "Precondition required. ⚠️"
+  },
+  "429": {
+    "description": "Too Many Requests – Client sent too many requests in a given time", 
+    "RFC": "RFC 6585", 
+    "message": "Too many requests. 🚨"
+  },
+  "431": {
+    "description": "Request Header Fields Too Large – Request headers are too large", 
+    "RFC": "RFC 6585", 
+    "message": "Request headers too large. 📏"
+  },
+  "451": {
+    "description": "Unavailable For Legal Reasons – Access denied for legal reasons", 
+    "RFC": "RFC 7725", 
+    "message": "Access denied for legal reasons. ⚖️"
+  },
+  "500": {
+    "description": "Internal Server Error – The server encountered an unexpected condition", 
+    "RFC": "RFC 9110", 
+    "message": "Internal server error. 💥"
+  },
+  "501": {
+    "description": "Not Implemented – Server does not support the requested method", 
+    "RFC": "RFC 9110", 
+    "message": "Method not implemented. ⚠️"
+  },
+  "502": {
+    "description": "Bad Gateway – Invalid response from upstream server", 
+    "RFC": "RFC 9110", 
+    "message": "Bad gateway. 🚧"
+  },
+  "503": {
+    "description": "Service Unavailable – Server cannot handle the request due to overload or maintenance", 
+    "RFC": "RFC 9110", 
+    "message": "Service unavailable. ⛔"
+  },
+  "504": {
+    "description": "Gateway Timeout – Upstream server failed to send response in time", 
+    "RFC": "RFC 9110", 
+    "message": "Gateway timeout. ⏱️"
+  },
+  "505": {
+    "description": "HTTP Version Not Supported – The HTTP version in the request is not supported", 
+    "RFC": "RFC 9110", 
+    "message": "HTTP version not supported. ❌"
+  },
+  "506": {
+    "description": "Variant Also Negotiates – Server internal configuration error in content negotiation", 
+    "RFC": "RFC 2295", 
+    "message": "Variant negotiation error. ⚠️"
+  },
+  "507": {
+    "description": "Insufficient Storage – Server is unable to store the representation", 
+    "RFC": "RFC 4918", 
+    "message": "Insufficient storage. 💾"
+  },
+  "508": {
+    "description": "Loop Detected – Server detected an infinite loop", 
+    "RFC": "RFC 5842", 
+    "message": "Infinite loop detected. 🔁"
+  },
+  "510": {
+    "description": "Not Extended – Additional extensions required for the request", 
+    "RFC": "RFC 2774", 
+    "message": "Additional extensions required. ⚠️"
+  },
+  "511": {
+    "description": "Network Authentication Required – Client must authenticate to gain network access", 
+    "RFC": "RFC 6585", 
+    "message": "Network authentication required. 🔑"}
+}
